@@ -15,7 +15,7 @@ with sentinel values, and human-readable error codes for debugging.
 ## Installation
 
 ```bash
-pip install fastjson-rpc
+pip install fastjson-rpc2
 ```
 
 For local development:

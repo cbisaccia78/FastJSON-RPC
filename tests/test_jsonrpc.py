@@ -1,7 +1,7 @@
 import pytest
 from pydantic import ValidationError
 
-from fastjson_rpc import ErrorObject, JsonRpcRequest, JsonRpcResponse, UNSET
+from fastjson_rpc2 import ErrorObject, JsonRpcRequest, JsonRpcResponse, UNSET
 
 
 def test_request_is_notification_default_id():
