@@ -29,7 +29,7 @@ pip install -e .[dev]
 ## Usage
 
 ```python
-from fastjson_rpc import JsonRpcRequest, JsonRpcResponse, ErrorObject
+from fastjson_rpc2 import JsonRpcRequest, JsonRpcResponse, ErrorObject
 
 # Build a notification request
 request = JsonRpcRequest(jsonrpc="2.0", method="ping", params={"foo": "bar"})
@@ -50,6 +50,8 @@ error_response = JsonRpcResponse(
     error=ErrorObject(code=-32601, message="Method not found"),
     id=1,
 )
+
+print(error_response.error.human_readable_code()) # -> 'METHOD_NOT_FOUND'
 ```
 
 ## Testing
