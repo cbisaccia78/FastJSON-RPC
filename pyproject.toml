@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fastjson_rpc"
+version = "0.1.0"
+description = "Fast utilities for working with JSON-RPC 2.0 messages"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "FastJSON-RPC"}]
+dependencies = [
+    "pydantic>=2.0,<3.0"
+]
+
+[project.urls]
+Homepage = "https://https://github.com/cbisaccia78/FastJSON-RPC"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
